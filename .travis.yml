@@ -9,6 +9,7 @@ before_script:
   - sleep 5
 
 script:
+  - chmod +x ./bin/setup.js
   - npm run-script test-travis
   - npm run gen-apidoc
 
