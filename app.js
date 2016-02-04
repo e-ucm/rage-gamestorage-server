@@ -35,6 +35,16 @@ app.get('/', function (req, res) {
     res.render('apidoc');
 });
 
+// Used to send status 200 messages
+app.use(function (req, res, next) {
+    res.sendDefaultSuccessMessage = function () {
+        res.json({
+            message: 'Success.'
+        });
+    };
+    next();
+});
+
 app.use(app.config.apiPath + '/usermodel', require('./routes/usermodel'));
 app.use(app.config.apiPath + '/health', require('./routes/health'));
 
