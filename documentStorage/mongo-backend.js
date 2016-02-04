@@ -1,16 +1,29 @@
+'use strict';
+
 /**
  * A backend for the 'document-storage' plug in that stores
  * its data inside a Mongo database.
  */
 
-'use strict';
-
-
+/**
+ * The MongoBackend maps the documents storing them directly into the MongoDB 'documents' collection.
+ * The 'key' used to identify the document is stored as the '_id' attribute of the MongoDB document.
+ * Before returning a document to the user, e.g. using the method 'get',
+ * the '_id' attribute is removed from the document.
+ *
+ * @param options An object with the 'uri' of the MongoConnection. For instance:
+ *                  {
+ *                      uri: 'mongodb://localhost:27017/analytics-storage'
+ *                  }
+ */
 var MongoBackend = function (options) {
 
     var db;
     var collection;
 
+    /**
+     * If it failes to connect, tries to connect the MongoDB client every 5 seconds.
+     */
     var connectToDB = function () {
         var MongoClient = require('mongodb').MongoClient;
         var connectionString = options.uri;
@@ -40,9 +53,9 @@ var MongoBackend = function (options) {
      *                   value - The document associated with the key
      */
     this.get = function (key, callback) {
-        collection.findOne({
+        collection.find({
             _id: key
-        }, function (err, doc) {
+        }).limit(1).next(function (err, doc) {
             if (err) {
                 err = parseError(err);
                 return callback(err);
@@ -50,7 +63,8 @@ var MongoBackend = function (options) {
             if (!doc) {
                 return callback();
             }
-            callback(null, doc.val);
+            delete doc._id;
+            callback(null, doc);
         });
     };
 
@@ -65,35 +79,8 @@ var MongoBackend = function (options) {
      *                   err (Any) - The error that occurred.
      */
     this.create = function (key, value, callback) {
-        collection.insertOne({
-            _id: key,
-            val: value
-        }, function (err) {
-            if (err) {
-                err = parseError(err);
-            }
-            callback(err);
-        });
-    };
-
-    /**
-     * Updates an available document with key assigning it 'value'
-     *
-     * If they key is not available an error is returned.
-     *
-     * @param key - A String used as a key.
-     * @param value - An object (document) associated to the key.
-     * @param callback - A function with signature function(err) to be invoked when the <key, value> is updated.
-     *                   err (Any) - The error that occurred.
-     */
-    this.update = function (key, value, callback) {
-        collection.updateOne({
-            _id: key
-        }, {
-            $set: {
-                val: value
-            }
-        }, function (err) {
+        value._id = key;
+        collection.insertOne(value, function (err) {
             if (err) {
                 err = parseError(err);
             }
@@ -112,16 +99,49 @@ var MongoBackend = function (options) {
      *                   err (Any) - The error that occurred.
      */
     this.updateAndSet = function (key, value, callback) {
+        value._id = key;
         collection.updateOne({
             _id: key
-        }, {
-            _id: key,
-            val: value
-        }, {
+        }, value, {
             upsert: true
         }, function (err) {
             if (err) {
                 err = parseError(err);
+            }
+            callback(err);
+        });
+    };
+
+    /**
+     * Updates an attribute of a given document with a given value.
+     *
+     * If they key is not available an error is thrown.
+     *
+     * @param key - A String used as a key to identify the document.
+     * @param value - A document with the following format:
+     *                {
+     *                      <field1>: <value1>,
+     *                      <field2>: <value2>,
+     *                      ...
+     *                }
+     *                The fields to be updated support dot notation.
+     *                    More information at: https://docs.mongodb.org/manual/core/document/#document-dot-notation
+     * @param callback - A function with signature function(err) to be invoked when the <key, value> is updated.
+     *                   err (Any) - The error that occurred.
+     */
+    this.updateFields = function (key, value, callback) {
+        value._id = key;
+        collection.updateOne({
+            _id: key
+        }, {
+            $set: value
+        }, function (err, res) {
+            if (err) {
+                err = parseError(err);
+            }
+            if (res.result.n === 0) {
+                err = new Error('No document found!');
+                err.status = 400;
             }
             callback(err);
         });
