@@ -1,5 +1,5 @@
 {
-    "name": "Rage-Analytics-Usermodel",
+    "name": "Rage-Gamestorage-Server",
     "version": "0.0.1",
     "private": true,
     "apidoc": {
@@ -23,13 +23,13 @@
         "gen-apidoc": "apidoc -i ./routes -o ./public/apidoc"
     },
     "dependencies": {
-        "async": "^1.3.x",
-        "body-parser": "^1.13.x",
+        "async": "1.5.x",
+        "body-parser": "1.14.x",
         "express": "~4.13.x",
         "jade": "*",
-        "mongodb": "^2.1.x",
+        "mongodb": "2.1.4",
         "morgan": "^1.6.x",
-        "request": "^2.60.x"
+        "request": "2.69.x"
     },
     "devDependencies": {
         "apidoc": "*",

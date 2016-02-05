@@ -29,7 +29,7 @@ describe('API Test', function(done) {
         require('./tests/configs');
 
         require('./tests/health')(request);
-        require('./tests/usermodel-test')(request, documentStorage);
+        require('./tests/gamestorage-test')(request, documentStorage);
         done();
     });
 

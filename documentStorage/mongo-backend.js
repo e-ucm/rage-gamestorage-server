@@ -13,7 +13,7 @@
  *
  * @param options An object with the 'uri' of the MongoConnection. For instance:
  *                  {
- *                      uri: 'mongodb://localhost:27017/analytics-storage'
+ *                      uri: 'mongodb://localhost:27017/gamestorage'
  *                  }
  */
 var MongoBackend = function (options) {

@@ -45,7 +45,7 @@ app.use(function (req, res, next) {
     next();
 });
 
-app.use(app.config.apiPath + '/usermodel', require('./routes/usermodel'));
+app.use(app.config.apiPath + '/storage', require('./routes/gamestorage'));
 app.use(app.config.apiPath + '/health', require('./routes/health'));
 
 // Catch 404 and forward to error handler
