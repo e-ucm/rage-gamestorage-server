@@ -1,6 +1,0 @@
-.idea/
-mongoDB
-node_modules/
-coverage/
-config-example.js
-/public/apidoc
