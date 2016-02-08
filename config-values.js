@@ -70,16 +70,16 @@ function initFromEnv(conf, prefix, links) {
 }
 
 exports.defaultValues = {
-    projectName: 'Rage Analytics User Model',
+    projectName: 'Rage Game Storage Server',
     companyName: 'e-UCM Research Group',
     mongoHost: 'localhost',
     mongoPort: '27017',
-    mongodbUrl: 'mongodb://localhost:27017/analytics-usermodel',
+    mongodbUrl: 'mongodb://localhost:27017/rage-gamestorage',
     apiPath: '/api',
     port: 3400,
     a2Host: 'localhost',
     a2Port: '3000',
-    a2Prefix: 'umodel',
+    a2Prefix: 'gamestorage',
     a2HomePage: 'http://localhost:3000/',
     a2ApiPath: 'http://localhost:3000/api/',
     a2AdminUsername: 'root',
@@ -90,16 +90,16 @@ exports.defaultValues = {
 };
 
 exports.testValues = {
-    projectName: 'rage-analytics-user-model (Test)',
+    projectName: 'rage-gamestorage-test (Test)',
     companyName: 'e-UCM Research Group (Test)',
     mongoHost: 'localhost',
     mongoPort: '27017',
-    mongodbUrl: 'mongodb://localhost:27017/analytics-usermodel-test', // This must be different than 'exports.defaultValues.mongodbUrl'
+    mongodbUrl: 'mongodb://localhost:27017/rage-gamestorage-test', // This must be different than 'exports.defaultValues.mongodbUrl'
     apiPath: '/api',
     port: 3440,
     a2Host: 'localhost',
     a2Port: '3000',
-    a2Prefix: 'umodel',
+    a2Prefix: 'gamestorage',
     a2HomePage: 'http://localhost:3000/',
     a2ApiPath: 'http://localhost:3000/api/',
     a2AdminUsername: 'root',
@@ -107,7 +107,7 @@ exports.testValues = {
     myHost: process.env.MY_HOST || 'localhost'
 };
 
-var prefix = 'RAGE_ANALYTICS_USERMODEL_';
+var prefix = 'RAGE_GAMESTORAGE_';
 var links = ['mongo', 'a2'];
 initFromEnv(exports.defaultValues, prefix, links);
 initFromEnv(exports.testValues, prefix, links);
@@ -115,7 +115,7 @@ initFromEnv(exports.testValues, prefix, links);
 // Some control instructions
 
 // Ensuring that 'mongodbUrl' values are different
-exports.defaultValues.mongodbUrl = 'mongodb://' + exports.defaultValues.mongoHost + ':' + exports.defaultValues.mongoPort + '/analytics-usermodel';
+exports.defaultValues.mongodbUrl = 'mongodb://' + exports.defaultValues.mongoHost + ':' + exports.defaultValues.mongoPort + '/rage-gamestorage';
 exports.testValues.mongodbUrl = exports.defaultValues.mongodbUrl + '-test';
 
 exports.defaultValues.a2HomePage = 'http://' + exports.defaultValues.a2Host + ':' + exports.defaultValues.a2Port + '/';

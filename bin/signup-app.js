@@ -3,20 +3,20 @@
 
 /**
  * This file issues the needed requests to set up the gleaner application
- * with the roles defined in the 'a-usermodel-routes.js' file.
+ * with the roles defined in the 'a-gamestorage-routes.js' file.
  *
  */
 
 var Path = require('path');
 var request = require('request');
 var config = require(Path.resolve(__dirname, '../config.js'));
-var appData = require(Path.resolve(__dirname, '../a-usermodel-routes.js')).app;
+var appData = require(Path.resolve(__dirname, '../a-gamestorage-routes.js')).app;
 
 var baseUsersAPI = config.a2.a2ApiPath;
 
 // Some messages
 var MONGODB_CONNECTION_REFUSED = 'Could not connect to MongoDB!';
-var NOT_REGISTERED_ASSET_MSG = 'Did not register the usermodel asset with A2, continuing anyway!';
+var NOT_REGISTERED_ASSET_MSG = 'Did not register the gamestorage asset with A2, continuing anyway!';
 
 request.post(baseUsersAPI + 'login', {
         form: {
@@ -63,7 +63,7 @@ request.post(baseUsersAPI + 'login', {
                 console.error('Error', body.message,
                     NOT_REGISTERED_ASSET_MSG);
             } else {
-                console.log('User Model application and routes setup complete.');
+                console.log('Game Storage application and routes setup complete.');
             }
 
             process.exit(0);

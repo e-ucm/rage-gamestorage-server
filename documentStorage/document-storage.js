@@ -107,6 +107,30 @@ var DocumentStorage = function (backend) {
     };
 
     /**
+     * Updates the value of the fields of a given document.
+     *
+     * If they key is not available an error is thrown.
+     *
+     * @param prefix
+     * @param suffix
+     * @param value - A document with the following format:
+     *                {
+     *                      <field1>: <value1>,
+     *                      <field2>: <value2>,
+     *                      ...
+     *                }
+     *                The fields to be updated support dot notation.
+     *                    More information at: https://docs.mongodb.org/manual/core/document/#document-dot-notation
+     * @param callback - A function with signature function(err) to be invoked when the <key, value> is updated.
+     *                   err (Any) - The error that occurred.
+     */
+    this.updateFields = function (prefix, suffix, value, callback) {
+        buildKey(prefix, suffix, callback, function (key) {
+            backend.updateFields(key, value, callback);
+        });
+    };
+
+    /**
      * Deletes a document with the constructed key.
      *
      * If they key is not available an error message is returned and nothing is deleted.

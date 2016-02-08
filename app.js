@@ -35,7 +35,17 @@ app.get('/', function (req, res) {
     res.render('apidoc');
 });
 
-app.use(app.config.apiPath + '/usermodel', require('./routes/usermodel'));
+// Used to send status 200 messages
+app.use(function (req, res, next) {
+    res.sendDefaultSuccessMessage = function () {
+        res.json({
+            message: 'Success.'
+        });
+    };
+    next();
+});
+
+app.use(app.config.apiPath + '/storage', require('./routes/gamestorage'));
 app.use(app.config.apiPath + '/health', require('./routes/health'));
 
 // Catch 404 and forward to error handler
