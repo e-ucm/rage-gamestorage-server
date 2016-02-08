@@ -4,21 +4,16 @@ var express = require('express'),
     router = express.Router();
 
 /**
- * @api {get} /usermodel/:prefix/:suffix  Returns a document value assigned to the constructed key.
+ * @api {get} /storage/:prefix/:suffix  Returns a document value assigned to the constructed key.
  * @apiDescription
  *          If a document with a given key is not available an error message is returned.
- *
  *          The key is constructed using the values of 'prefix' & 'suffix'
- *
  *          The generation process appends 'prefix' + '|' + 'suffix' to create the key.
- *
  *          NOTE: '|' is a special character that cannot be present in the prefix nor the suffix.
- *
  *          The prefix/suffix mechanism is used to be able to easily filter documents with the same identifier
  *          used by different assets.
- *          For instance, is assets 'A' and 'B' want to use a document identified by the key 'key'
+ *          For instance, if assets 'A' and 'B' want to use a document identified by the key 'key'
  *          and each document has to be different, they can use the prefix/suffix with the following values:
- *
  *              Asset A:
  *                  prefix: 'A'
  *                  suffix: 'key'
@@ -26,8 +21,8 @@ var express = require('express'),
  *                  prefix: 'B'
  *                  suffix: 'key'
  *
- * @apiName GetUsermodel
- * @apiGroup Usermodel
+ * @apiName GetGamestorage
+ * @apiGroup Gamestorage
  *
  * @apiParam {String} prefix A string used as prefix to build the key.
  * @apiParam {String} suffix A string used as suffix to build the key.
@@ -56,11 +51,11 @@ router.get('/:prefix/:suffix', function (req, res, next) {
 });
 
 /**
- * @api {post} /usermodel/update/:prefix/:suffix/ Updates the fields of an existing document.
+ * @api {post} /storage/update/:prefix/:suffix/ Updates the fields of an existing document.
  * @apiDescription If they key is not available an error is thrown.
  *
- * @apiName PostUsermodelField
- * @apiGroup Usermodel
+ * @apiName PostGamestorageField
+ * @apiGroup Gamestorage
  *
  * @apiParam {String} prefix A string used as prefix to build the key.
  * @apiParam {String} suffix A string used as suffix to build the key.
@@ -104,11 +99,11 @@ router.post('/update/:prefix/:suffix', function (req, res, next) {
 });
 
 /**
- * @api {post} /usermodel/:prefix/:suffix Creates a new document.
+ * @api {post} /storage/:prefix/:suffix Creates a new document.
  * @apiDescription If they key already has an assigned value an error is returned.
  *
- * @apiName PostUsermodel
- * @apiGroup Usermodel
+ * @apiName PostGamestorage
+ * @apiGroup Gamestorage
  *
  * @apiParam {String} prefix A string used as prefix to build the key.
  * @apiParam {String} suffix A string used as suffix to build the key.
@@ -142,14 +137,14 @@ router.post('/:prefix/:suffix', function (req, res, next) {
 });
 
 /**
- * @api {put} /usermodel/:prefix/:suffix Overrides or creates a new document.
+ * @api {put} /storage/:prefix/:suffix Overrides or creates a new document.
  * @apiDescription
  *                - If a document with the given key is not available a new document is created.
  *                - If a document with the given key already exists all its values are overridden by the new
  *                      values provided within the body of this PUT request.
  *
- * @apiName PutUsermodel
- * @apiGroup Usermodel
+ * @apiName PutGamestorage
+ * @apiGroup Gamestorage
  *
  * @apiParam {String} prefix A string used as prefix to build the key.
  * @apiParam {String} suffix A string used as suffix to build the key.
@@ -182,11 +177,11 @@ router.put('/:prefix/:suffix', function (req, res, next) {
 });
 
 /**
- * @api {delete} /usermodel/:prefix/:suffix Deletes an existing document.
+ * @api {delete} /storage/:prefix/:suffix Deletes an existing document.
  * @apiDescription If they key is not available an error message is returned and nothing is deleted.
  *
- * @apiName DeleteUsermodel
- * @apiGroup Usermodel
+ * @apiName DeleteGamestorage
+ * @apiGroup Gamestorage
  *
  * @apiParam {String} prefix A string used as prefix to build the key.
  * @apiParam {String} suffix A string used as suffix to build the key.
