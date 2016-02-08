@@ -1,36 +1,137 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c00ebefc-4d6c-414a-b080-6451456a6067" name="Default" comment="">
-      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\.codeclimate.yml" afterPath="" />
-      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\.coveralls.yml" afterPath="" />
-      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\.jscsrc" afterPath="" />
-      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\.jshintignore" afterPath="" />
-      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\.jshintrc" afterPath="" />
-      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\Dockerfile" afterPath="" />
-      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\README.md" afterPath="" />
-      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\a-gamestorage-routes.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\app.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\bin\setup.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\bin\signup-app.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\bin\www" afterPath="" />
-      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\config-example.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\config-values.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\documentStorage\document-storage.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\documentStorage\mongo-backend.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\package.json" afterPath="" />
-      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\routes\gamestorage.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\routes\health.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\test\test.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\test\tests\configs.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\test\tests\gamestorage-test.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\test\tests\health.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\views\apidoc\index.jade" afterPath="" />
+    <list default="true" id="86e50505-afac-4c2e-bee2-7e307839e4a9" name="Default" comment="">
+      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\public\apidoc\api_data.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\public\apidoc\api_data.json" afterPath="" />
+      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\public\apidoc\api_project.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\public\apidoc\api_project.json" afterPath="" />
+      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\public\apidoc\css\style.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\public\apidoc\img\favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\public\apidoc\img\glyphicons-halflings-white.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\public\apidoc\img\glyphicons-halflings.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\public\apidoc\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\public\apidoc\locales\de.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\public\apidoc\locales\es.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\public\apidoc\locales\fr.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\public\apidoc\locales\locale.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\public\apidoc\locales\nl.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\public\apidoc\locales\pl.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\public\apidoc\locales\pt_br.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\public\apidoc\locales\ru.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\public\apidoc\locales\zh.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\public\apidoc\locales\zh_cn.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\public\apidoc\main.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\public\apidoc\utils\handlebars_helper.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\public\apidoc\utils\send_sample_request.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\public\apidoc\vendor\bootstrap-responsive.min.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\public\apidoc\vendor\bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\public\apidoc\vendor\bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\public\apidoc\vendor\diff_match_patch.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\public\apidoc\vendor\handlebars.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\public\apidoc\vendor\jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\public\apidoc\vendor\lodash.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\public\apidoc\vendor\path-to-regexp\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\public\apidoc\vendor\path-to-regexp\index.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\public\apidoc\vendor\polyfill.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\public\apidoc\vendor\prettify.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\public\apidoc\vendor\prettify\lang-apollo.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\public\apidoc\vendor\prettify\lang-basic.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\public\apidoc\vendor\prettify\lang-clj.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\public\apidoc\vendor\prettify\lang-css.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\public\apidoc\vendor\prettify\lang-dart.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\public\apidoc\vendor\prettify\lang-erlang.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\public\apidoc\vendor\prettify\lang-go.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\public\apidoc\vendor\prettify\lang-hs.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\public\apidoc\vendor\prettify\lang-lisp.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\public\apidoc\vendor\prettify\lang-llvm.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\public\apidoc\vendor\prettify\lang-lua.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\public\apidoc\vendor\prettify\lang-matlab.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\public\apidoc\vendor\prettify\lang-ml.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\public\apidoc\vendor\prettify\lang-mumps.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\public\apidoc\vendor\prettify\lang-n.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\public\apidoc\vendor\prettify\lang-pascal.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\public\apidoc\vendor\prettify\lang-proto.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\public\apidoc\vendor\prettify\lang-r.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\public\apidoc\vendor\prettify\lang-rd.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\public\apidoc\vendor\prettify\lang-scala.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\public\apidoc\vendor\prettify\lang-sql.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\public\apidoc\vendor\prettify\lang-tcl.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\public\apidoc\vendor\prettify\lang-tex.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\public\apidoc\vendor\prettify\lang-vb.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\public\apidoc\vendor\prettify\lang-vhdl.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\public\apidoc\vendor\prettify\lang-wiki.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\public\apidoc\vendor\prettify\lang-xq.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\public\apidoc\vendor\prettify\lang-yaml.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\public\apidoc\vendor\prettify\prettify.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\public\apidoc\vendor\prettify\prettify.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\public\apidoc\vendor\prettify\run_prettify.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\public\apidoc\vendor\require.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\public\apidoc\vendor\semver.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\rage\rage-gamestorage-server\public\apidoc\vendor\webfontloader.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/path-to-regexp/LICENSE" afterPath="$PROJECT_DIR$/vendor/path-to-regexp/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api_data.js" afterPath="$PROJECT_DIR$/api_data.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api_data.json" afterPath="$PROJECT_DIR$/api_data.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api_project.js" afterPath="$PROJECT_DIR$/api_project.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api_project.json" afterPath="$PROJECT_DIR$/api_project.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bootstrap-responsive.min.css" afterPath="$PROJECT_DIR$/vendor/bootstrap-responsive.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bootstrap.min.css" afterPath="$PROJECT_DIR$/vendor/bootstrap.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bootstrap.min.js" afterPath="$PROJECT_DIR$/vendor/bootstrap.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/locales/de.js" afterPath="$PROJECT_DIR$/locales/de.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/diff_match_patch.min.js" afterPath="$PROJECT_DIR$/vendor/diff_match_patch.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/locales/es.js" afterPath="$PROJECT_DIR$/locales/es.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/locales/fr.js" afterPath="$PROJECT_DIR$/locales/fr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/handlebars.min.js" afterPath="$PROJECT_DIR$/vendor/handlebars.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils/handlebars_helper.js" afterPath="$PROJECT_DIR$/utils/handlebars_helper.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/path-to-regexp/index.js" afterPath="$PROJECT_DIR$/vendor/path-to-regexp/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/jquery.min.js" afterPath="$PROJECT_DIR$/vendor/jquery.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/prettify/lang-apollo.js" afterPath="$PROJECT_DIR$/vendor/prettify/lang-apollo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/prettify/lang-basic.js" afterPath="$PROJECT_DIR$/vendor/prettify/lang-basic.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/prettify/lang-clj.js" afterPath="$PROJECT_DIR$/vendor/prettify/lang-clj.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/prettify/lang-css.js" afterPath="$PROJECT_DIR$/vendor/prettify/lang-css.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/prettify/lang-dart.js" afterPath="$PROJECT_DIR$/vendor/prettify/lang-dart.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/prettify/lang-erlang.js" afterPath="$PROJECT_DIR$/vendor/prettify/lang-erlang.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/prettify/lang-go.js" afterPath="$PROJECT_DIR$/vendor/prettify/lang-go.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/prettify/lang-hs.js" afterPath="$PROJECT_DIR$/vendor/prettify/lang-hs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/prettify/lang-lisp.js" afterPath="$PROJECT_DIR$/vendor/prettify/lang-lisp.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/prettify/lang-llvm.js" afterPath="$PROJECT_DIR$/vendor/prettify/lang-llvm.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/prettify/lang-lua.js" afterPath="$PROJECT_DIR$/vendor/prettify/lang-lua.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/prettify/lang-matlab.js" afterPath="$PROJECT_DIR$/vendor/prettify/lang-matlab.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/prettify/lang-ml.js" afterPath="$PROJECT_DIR$/vendor/prettify/lang-ml.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/prettify/lang-mumps.js" afterPath="$PROJECT_DIR$/vendor/prettify/lang-mumps.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/prettify/lang-n.js" afterPath="$PROJECT_DIR$/vendor/prettify/lang-n.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/prettify/lang-pascal.js" afterPath="$PROJECT_DIR$/vendor/prettify/lang-pascal.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/prettify/lang-proto.js" afterPath="$PROJECT_DIR$/vendor/prettify/lang-proto.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/prettify/lang-r.js" afterPath="$PROJECT_DIR$/vendor/prettify/lang-r.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/prettify/lang-rd.js" afterPath="$PROJECT_DIR$/vendor/prettify/lang-rd.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/prettify/lang-scala.js" afterPath="$PROJECT_DIR$/vendor/prettify/lang-scala.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/prettify/lang-sql.js" afterPath="$PROJECT_DIR$/vendor/prettify/lang-sql.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/prettify/lang-tcl.js" afterPath="$PROJECT_DIR$/vendor/prettify/lang-tcl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/prettify/lang-tex.js" afterPath="$PROJECT_DIR$/vendor/prettify/lang-tex.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/prettify/lang-vb.js" afterPath="$PROJECT_DIR$/vendor/prettify/lang-vb.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/prettify/lang-vhdl.js" afterPath="$PROJECT_DIR$/vendor/prettify/lang-vhdl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/prettify/lang-wiki.js" afterPath="$PROJECT_DIR$/vendor/prettify/lang-wiki.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/prettify/lang-xq.js" afterPath="$PROJECT_DIR$/vendor/prettify/lang-xq.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/prettify/lang-yaml.js" afterPath="$PROJECT_DIR$/vendor/prettify/lang-yaml.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/locales/locale.js" afterPath="$PROJECT_DIR$/locales/locale.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/lodash.min.js" afterPath="$PROJECT_DIR$/vendor/lodash.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.js" afterPath="$PROJECT_DIR$/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/locales/nl.js" afterPath="$PROJECT_DIR$/locales/nl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/locales/pl.js" afterPath="$PROJECT_DIR$/locales/pl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/polyfill.js" afterPath="$PROJECT_DIR$/vendor/polyfill.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/prettify.css" afterPath="$PROJECT_DIR$/vendor/prettify.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/prettify/prettify.js" afterPath="$PROJECT_DIR$/vendor/prettify/prettify.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/locales/pt_br.js" afterPath="$PROJECT_DIR$/locales/pt_br.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/require.min.js" afterPath="$PROJECT_DIR$/vendor/require.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/locales/ru.js" afterPath="$PROJECT_DIR$/locales/ru.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/prettify/run_prettify.js" afterPath="$PROJECT_DIR$/vendor/prettify/run_prettify.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/webfontloader.js" afterPath="$PROJECT_DIR$/vendor/webfontloader.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/locales/zh.js" afterPath="$PROJECT_DIR$/locales/zh.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/locales/zh_cn.js" afterPath="$PROJECT_DIR$/locales/zh_cn.js" />
     </list>
-    <ignored path="rage-analytics-usermodel.iws" />
+    <ignored path="rage-gamestorage-server.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -45,7 +146,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
-    <favorites_list name="rage-analytics-usermodel" />
+    <favorites_list name="rage-gamestorage-server" />
   </component>
   <component name="FileEditorManager">
     <leaf />
@@ -134,8 +235,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -201,23 +302,23 @@
     <frame x="1912" y="-8" width="1696" height="1026" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15892857" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31188658" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3293348" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293348" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">

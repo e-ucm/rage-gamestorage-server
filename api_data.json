@@ -1,45 +1,11 @@
 [
   {
-    "type": "get",
-    "url": "/health",
-    "title": "Check the api health.",
-    "name": "Heath",
-    "group": "Health",
-    "permission": [
-      {
-        "name": "none"
-      }
-    ],
-    "success": {
-      "fields": {
-        "200": [
-          {
-            "group": "200",
-            "optional": false,
-            "field": "Success.",
-            "description": ""
-          }
-        ]
-      },
-      "examples": [
-        {
-          "title": "Success-Response:",
-          "content": "HTTP/1.1 200 OK\n{\n    \"status\": \"Available\"\n}",
-          "type": "json"
-        }
-      ]
-    },
-    "version": "0.0.0",
-    "filename": "routes/health.js",
-    "groupTitle": "Health"
-  },
-  {
     "type": "delete",
-    "url": "/usermodel/:prefix/:suffix",
+    "url": "/storage/:prefix/:suffix",
     "title": "Deletes an existing document.",
     "description": "<p>If they key is not available an error message is returned and nothing is deleted.</p>",
-    "name": "DeleteUsermodel",
-    "group": "Usermodel",
+    "name": "DeleteGamestorage",
+    "group": "Gamestorage",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -81,15 +47,15 @@
     },
     "version": "0.0.0",
     "filename": "routes/gamestorage.js",
-    "groupTitle": "Usermodel"
+    "groupTitle": "Gamestorage"
   },
   {
     "type": "get",
-    "url": "/usermodel/:prefix/:suffix",
+    "url": "/storage/:prefix/:suffix",
     "title": "Returns a document value assigned to the constructed key.",
-    "description": "<p>If a document with a given key is not available an error message is returned.</p> <pre><code>     The key is constructed using the values of 'prefix' &amp; 'suffix'       The generation process appends 'prefix' + '|' + 'suffix' to create the key.       NOTE: '|' is a special character that cannot be present in the prefix nor the suffix.       The prefix/suffix mechanism is used to be able to easily filter documents with the same identifier      used by different assets.      For instance, is assets 'A' and 'B' want to use a document identified by the key 'key'      and each document has to be different, they can use the prefix/suffix with the following values:           Asset A:              prefix: 'A'              suffix: 'key'          Asset B:              prefix: 'B'              suffix: 'key'</code></pre>",
-    "name": "GetUsermodel",
-    "group": "Usermodel",
+    "description": "<p>If a document with a given key is not available an error message is returned. The key is constructed using the values of 'prefix' &amp; 'suffix' The generation process appends 'prefix' + '|' + 'suffix' to create the key. NOTE: '|' is a special character that cannot be present in the prefix nor the suffix. The prefix/suffix mechanism is used to be able to easily filter documents with the same identifier used by different assets. For instance, if assets 'A' and 'B' want to use a document identified by the key 'key' and each document has to be different, they can use the prefix/suffix with the following values: Asset A: prefix: 'A' suffix: 'key' Asset B: prefix: 'B' suffix: 'key'</p>",
+    "name": "GetGamestorage",
+    "group": "Gamestorage",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -131,15 +97,15 @@
     },
     "version": "0.0.0",
     "filename": "routes/gamestorage.js",
-    "groupTitle": "Usermodel"
+    "groupTitle": "Gamestorage"
   },
   {
     "type": "post",
-    "url": "/usermodel/:prefix/:suffix",
+    "url": "/storage/:prefix/:suffix",
     "title": "Creates a new document.",
     "description": "<p>If they key already has an assigned value an error is returned.</p>",
-    "name": "PostUsermodel",
-    "group": "Usermodel",
+    "name": "PostGamestorage",
+    "group": "Gamestorage",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -201,15 +167,15 @@
     },
     "version": "0.0.0",
     "filename": "routes/gamestorage.js",
-    "groupTitle": "Usermodel"
+    "groupTitle": "Gamestorage"
   },
   {
     "type": "post",
-    "url": "/usermodel/update/:prefix/:suffix/",
+    "url": "/storage/update/:prefix/:suffix/",
     "title": "Updates the fields of an existing document.",
     "description": "<p>If they key is not available an error is thrown.</p>",
-    "name": "PostUsermodelField",
-    "group": "Usermodel",
+    "name": "PostGamestorageField",
+    "group": "Gamestorage",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -290,15 +256,15 @@
     },
     "version": "0.0.0",
     "filename": "routes/gamestorage.js",
-    "groupTitle": "Usermodel"
+    "groupTitle": "Gamestorage"
   },
   {
     "type": "put",
-    "url": "/usermodel/:prefix/:suffix",
+    "url": "/storage/:prefix/:suffix",
     "title": "Overrides or creates a new document.",
     "description": "<ul> <li>If a document with the given key is not available a new document is created. - If a document with the given key already exists all its values are overridden by the new values provided within the body of this PUT request.</li> </ul>",
-    "name": "PutUsermodel",
-    "group": "Usermodel",
+    "name": "PutGamestorage",
+    "group": "Gamestorage",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -360,6 +326,40 @@
     },
     "version": "0.0.0",
     "filename": "routes/gamestorage.js",
-    "groupTitle": "Usermodel"
+    "groupTitle": "Gamestorage"
+  },
+  {
+    "type": "get",
+    "url": "/health",
+    "title": "Check the api health.",
+    "name": "Heath",
+    "group": "Health",
+    "permission": [
+      {
+        "name": "none"
+      }
+    ],
+    "success": {
+      "fields": {
+        "200": [
+          {
+            "group": "200",
+            "optional": false,
+            "field": "Success.",
+            "description": ""
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK\n{\n    \"status\": \"Available\"\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "version": "0.0.0",
+    "filename": "routes/health.js",
+    "groupTitle": "Health"
   }
 ]
