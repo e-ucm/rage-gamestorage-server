@@ -138,8 +138,7 @@ var MongoBackend = function (options) {
         }, function (err, res) {
             if (err) {
                 err = parseError(err);
-            }
-            if (res.result.n === 0) {
+            } else if (!res || !res.result || res.result.n === 0) {
                 err = new Error('No document found!');
                 err.status = 400;
             }
