@@ -36,7 +36,7 @@
         "coveralls": "*",
         "grunt": "^0.4.5",
         "handlebars": "*",
-        "jscs": "*",
+        "jscs": "2.9.0",
         "istanbul": "*",
         "jshint": "*",
         "mocha": "*",
